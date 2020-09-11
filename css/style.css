@@ -1,0 +1,17 @@
+.title {
+    color: orangered;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.list {
+    color: sandybrown;
+    font-size: medium;
+    font-style: italic;
+}
+
+.recipe {
+    color: orangered;
+    font-size: large;
+    font-style: inherit;
+}

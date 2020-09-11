@@ -10,10 +10,10 @@
     </head>
     <body>
         <header>
-            <h1>Lista del super</h1>
+            <h1 class="title">Lista del super</h1>
         </header>
         <main>
-            <section>
+            <section class="list">
                 <ul>
                     <li>Carniceria</li>
                         <ol>
@@ -34,7 +34,7 @@
                 </ul>
             </section>
             <section>
-                <a href="https://www.serargentino.com/gastronomia/pastel-de-papas-criollo-facil-y-para-preparar-en-casa?gclid=EAIaIQobChMI9sX-i6za6wIVwYSRCh18VQCtEAAYASAAEgJt7vD_BwE">Receta pastel de papa</a>
+                <a href="https://www.serargentino.com/gastronomia/pastel-de-papas-criollo-facil-y-para-preparar-en-casa?gclid=EAIaIQobChMI9sX-i6za6wIVwYSRCh18VQCtEAAYASAAEgJt7vD_BwE" class="recipe">Receta pastel de papa</a>
                 <p> </p>
                 <figure>
                     <img 
@@ -57,7 +57,17 @@
                     <p></p>
                     <label for="Nombre">
                         <span>Nombre: </span>
-                        <input type="text" id="Nombre" placeholder="(Quien va a comer pastel de papa)">
+                        <input type="text" id="Nombre" placeholder="(Quien va a comer pastel de papa)" autocomplete="name" required>
+                    </label>
+                    <p></p>
+                    <label for="Gusto">
+                        <span>A  usted le gusta el pastel de papa?</span>
+                        <input list="Opciones">
+                        <datalist id="Opciones">
+                            <option value="Si, mucho"></option>
+                            <option value="Si, me encanta"></option>
+                            <option value="No hay nada que me guste mas."></option>
+                        </datalist>
                     </label>
                     <p></p>
                     <label for="Pregunta">
@@ -69,6 +79,8 @@
                         <span>A que hora? </span>
                         <input type="time" id="Hora">
                     </label>
+                    <p></p>
+                    <input type="submit">
                 </form>
             </section>
         </main>
