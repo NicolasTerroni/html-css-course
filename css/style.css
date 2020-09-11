@@ -15,3 +15,39 @@
     font-size: large;
     font-style: inherit;
 }
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 10px;
+    background-color: lightsalmon;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: sandybrown;
+    font-size: large;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    background-color: wheat;
+}
+
+.main-nav__item a:hover {
+    color: rgb(255, 254, 253);
+}
+
+.main-nav__item a:active {
+    color: orangered;
+}
+
+.main-nav__item a::after {
+    content: "  -";
+}
+
+.main-nav__item a::before {
+    content: "-  ";
+}
