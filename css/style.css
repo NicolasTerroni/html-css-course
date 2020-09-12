@@ -1,6 +1,35 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+
+
+.body {
+    background-color: whitesmoke;
+    border: 5px solid wheat;
+}
+
+.header {
+    width: 60%;
+    padding: 20px 35px;
+}
+
 .title {
     color: orangered;
     font-size: x-large;
+    font-style: oblique;
+}
+
+.main {
+    width: 60%;
+    padding: 20px 35px;
+}
+
+.list-title {
+    color: sandybrown;
+    font-size: large;
     font-style: italic;
 }
 
@@ -50,4 +79,8 @@
 
 .main-nav__item a::before {
     content: "-  ";
+}
+
+.foto {
+    padding: 30px;
 }
